@@ -1,0 +1,6 @@
+<div class="float-left">
+    <%= form_tag(posts_path, method: "get", remote: true, :class => "form-inline") do  %>
+      <%= text_field_tag :search, params[:search], placeholder:"Buscar un Post", :class =>"form-control" %>
+      <%= submit_tag "Buscar", class:"btn btn-primary"%>
+    <% end %>
+</div>
